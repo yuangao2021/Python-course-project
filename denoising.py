@@ -7,6 +7,12 @@
 from skimage.restoration import denoise_nl_means, estimate_sigma
 from skimage import img_as_ubyte, img_as_float
 from matplotlib import pyplot as plt
+#Matplotlib is a plotting library for the Python programming language.
+#Pyplot is a Matplotlib module which provides a MATLAB-like interface.
+#Pyplot is commonly used not just to generate plots and graphs but also to visualize images.
+#because visualizing images is nothing but plotting data in 2D. 
+#to install matplotlib, pip install matplotlib.
+#to import the package you need to use import matplotlib
 from skimage import io
 import numpy as np
 
