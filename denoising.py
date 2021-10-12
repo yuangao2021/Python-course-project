@@ -5,6 +5,9 @@
 #NLM: https://scikit-image.org/docs/dev/auto_examples/filters/plot_nonlocal_means.htm
 
 from skimage.restoration import denoise_nl_means, estimate_sigma
+#to install skimage, pip install scikit-image. 
+#to import the package you need to use import skimage.
+#scikit image is an image processing library that includes alforithms for segmentation, geometric transformation, color space manipulation, analysis, filtering, feature detection, and more.
 from skimage import img_as_ubyte, img_as_float
 from matplotlib import pyplot as plt
 #Matplotlib is a plotting library for the Python programming language.
