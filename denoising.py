@@ -5,7 +5,7 @@
 #The input pixel is at the centre of the kernel. 
 #The convolution is performed by sliding the kernel over the image, 
 #usually from top left of image.
-#Linear filters and non-linear filters.
+#Linear filters and non-linear filters are what I have tried to use.
 #Gaussian is an example of linear filter. 
 #Non-linear filters preserve edges. 
 #Median filter is an example of non-linear filter. 
