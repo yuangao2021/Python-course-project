@@ -1,7 +1,7 @@
 #Filters work by convolution with a moving window called a kernel.
 #Convolution is nothing but multiplication of two arrays of different sizes. 
 #The image will be of one size and the kernel with be of a different size, 
-#usually much smaller than image
+#usually much smaller than image.
 #The input pixel is at the centre of the kernel. 
 #The convolution is performed by sliding the kernel over the image, 
 #usually from top left of image.
@@ -9,7 +9,8 @@
 #Gaussian is an example of linear filter. 
 #Non-linear filters preserve edges. 
 #Median filter is an example of non-linear filter. 
-#NLM: https://scikit-image.org/docs/dev/auto_examples/filters/plot_nonlocal_means.htm
+#Non-local means algorithm (NLM): https://scikit-image.org/docs/dev/auto_examples/filters/plot_nonlocal_means.htm 
+#is the best among three of them according to the results.
 
 from skimage.restoration import denoise_nl_means, estimate_sigma
 #to install skimage, pip install scikit-image. 
@@ -49,6 +50,11 @@ plt.imsave("median.jpg", median_img)
 
 
 #NLM
+#The non-local means algorithm replaces the value of a pixel by an average of a selection of other pixels values: 
+#small patches centered on the other pixels are compared to the patch centered on the pixel of interest, 
+#and the average is performed only for pixels that have patches close to the current patch. 
+#As a result, this algorithm can restore well textures, that would be blurred by other denoising algorithm.
+
 
 sigma_est = np.mean(estimate_sigma(img, multichannel=True))
 
