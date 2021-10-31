@@ -13,7 +13,7 @@ plt.imsave("test_data/gaussian.jpg", gaussian_img)
 
 
 median_img = nd.median_filter(img, size=5)
-plt.imsave("median.jpg", median_img)
+plt.imsave("test_data/median.jpg", median_img)
 
 
 sigma_est = np.mean(estimate_sigma(img, multichannel=True))
