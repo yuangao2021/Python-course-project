@@ -29,4 +29,4 @@ denoise_img_as_8byte = img_as_ubyte(denoise_img)
 
 plt.imshow(denoise_img)
 
-plt.imsave("NLM.jpg",denoise_img)
+plt.imsave("test_data/NLM.jpg",denoise_img)
