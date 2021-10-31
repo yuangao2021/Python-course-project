@@ -9,7 +9,7 @@ img = img_as_float(io.imread("test_data/noisy_image.jpg"))
 
 from scipy import ndimage as nd
 gaussian_img = nd.gaussian_filter(img, sigma=5)
-plt.imsave("gaussian.jpg", gaussian_img)
+plt.imsave("test_data/gaussian.jpg", gaussian_img)
 
 
 median_img = nd.median_filter(img, size=5)
