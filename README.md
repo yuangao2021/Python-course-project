@@ -1,6 +1,9 @@
 # Python-course-project
 
 This is a repository to denoise cell pictures from microscopy.
+Gaussian is a linear filter. 
+Median is a non-linear filter, non-linear filters preserve edges, the algorithm selects the median value of all the pixels in the selected window.
+
 
 ## Packages
 
