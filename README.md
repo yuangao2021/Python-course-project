@@ -6,7 +6,7 @@ This is a repository to denoise cell pictures from microscopy.
 
 scikit-image v0.18.0
 matplotlib v3.3.2
-scipy 
+scipy v1.7.1
 
 ## How to run
 
