@@ -6,6 +6,7 @@ from skimage import io
 import numpy as np
 
 img = img_as_float(io.imread("test_data/noisy_image.jpg"))
+#Need to convert to float as we will be doing math on the array
 
 from scipy import ndimage as nd
 gaussian_img = nd.gaussian_filter(img, sigma=5)
