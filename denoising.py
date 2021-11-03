@@ -5,15 +5,15 @@ from matplotlib import pyplot as plt
 from skimage import io
 import numpy as np
 
-img = img_as_float(io.imread("https://github.com/yuangao2021/Python-course-project/blob/main/test_data/noisy_image.jpg"))
+img = img_as_float(io.imread("test_data/noisy_image.jpg"))
 
 from scipy import ndimage as nd
 gaussian_img = nd.gaussian_filter(img, sigma=5)
-plt.imsave("https://github.com/yuangao2021/Python-course-project/blob/main/test_data/gaussian.jpg", gaussian_img)
+plt.imsave("test_data/gaussian.jpg", gaussian_img)
 
 
 median_img = nd.median_filter(img, size=5)
-plt.imsave("https://github.com/yuangao2021/Python-course-project/blob/main/test_data/median.jpg", median_img)
+plt.imsave("test_data/median.jpg", median_img)
 
 
 sigma_est = np.mean(estimate_sigma(img, multichannel=True))
@@ -29,4 +29,4 @@ denoise_img_as_8byte = img_as_ubyte(denoise_img)
 
 plt.imshow(denoise_img)
 
-plt.imsave("https://github.com/yuangao2021/Python-course-project/blob/main/test_data/NLM.jpg",denoise_img)
+plt.imsave("test_data/NLM.jpg",denoise_img)
